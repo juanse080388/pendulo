@@ -1,0 +1,124 @@
+/* ===============================
+   ESTILO GENERAL
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("../img/logo\ sakura.png");
+    background-size: 100%; /* Antes estaba cover, ahora se reduce al 80% */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcional: mantiene la imagen fija al hacer scroll */
+    color: #f8efef;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===============================
+   HEADER
+============================== */
+
+header {
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffb6c1; /* Rosa claro */
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* ===============================
+   IMÁGENES
+============================== */
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.imagenes img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ===============================
+   INFO
+============================== */
+
+.info {
+    text-align: center;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente para legibilidad */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.info p, .info div {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* ===============================
+   BOTONES
+============================== */
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.botones button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7c9d0;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botones button:hover {
+    background-color: #f765ae;
+}
+
+/* ===============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 600px) {
+    .imagenes img {
+        width: 90px;
+        height: 90px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .info p, .info div {
+        font-size: 1rem;
+    }
+
+    .botones button {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
